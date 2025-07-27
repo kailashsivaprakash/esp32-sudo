@@ -222,8 +222,8 @@
       let gpio = parseInt(btn.gpio);
       let isOn = false;
 
-      if (gpio === 13) isOn = status["R2"];
-      else if (gpio === 14) isOn = status["R1"];
+      if (gpio === 13) isOn = status["R1"];
+      else if (gpio === 14) isOn = status["R2"];
       else if (gpio === 999) isOn = status["P"];
       else isOn = status["G" + gpio]; // ✅ Custom GPIO status key (e.g., G16:1)
 
